@@ -1,4 +1,10 @@
-# Sodium V2.0
-Theme Sodium version 2.0 for SCP-CN Wiki
+# Sodium
 
-Update.
+SCP-CN维基主题版式
+基于Sigma-9
+
+SCP-CN Wiki Theme Sodium
+Based on Sigma-9
+
+正在更新
+
