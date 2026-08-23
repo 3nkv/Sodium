@@ -467,7 +467,7 @@ hr {
         grid-auto-flow: row;
         overflow: hidden;
         border-radius: var(--common-box-radius-mn);
-        box-shadow: var(--common-box-shadow-4);
+        box-shadow: var(--common-box-shadow-2);
         border: none;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -478,11 +478,13 @@ hr {
  
     #top-bar .mobile-top-bar ul > li > ul > li a {
         text-align: center;
+        font-size: 13px;
         width: 100%;
         backdrop-filter: var(--sodium-bg-filter);
         color: var(--sodium-text-color);
         background-color: var(--sodium-sec-bg-color);
         border-radius: 0;
+        padding: 0;
         padding-top: calc(var(--topbar-height) * 0.25);
         padding-bottom: calc(var(--topbar-height) * 0.25);
         height: auto;
