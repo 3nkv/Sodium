@@ -91,6 +91,7 @@
     --common-box-shadow-1: 0 0 8px 0 rgb(0 0 0 / 2%);
     --common-box-shadow-2: 0 0 16px 0 rgba(0, 0, 0, 20%);
     --common-box-shadow-3: 0 0 8px 0 rgb(0 0 0 / 10%);
+    --common-box-shadow-4: 0 0 8px 0 rgb(0 0 0 / 5%);
 }
  
 /* source: http://ah-sandbox.wikidot.com/component:collapsible-sidebar-x1 */
@@ -397,6 +398,19 @@ hr {
     transform: translateY(0);
 }
 
+@media (max-width: 767px) {
+    #top-bar .mobile-top-bar ul > li > ul {
+        transform: translateY(-10px);
+        opacity: 0;
+        transition: transform 0.15s cubic-bezier(0.4, 0.88, 0.58, 1), opacity 0.15s cubic-bezier(0.4, 0.88, 0.58, 1);
+    }
+
+    #top-bar .mobile-top-bar ul > li.sfhover > ul {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* header占满 */
 #header, #top-bar {
     width: 100%;
@@ -422,6 +436,10 @@ hr {
         flex-grow: 1;
         grid-auto-flow: column;
     }
+
+    #top-bar .mobile-top-bar ul > li {
+        position: unset;
+    }
  
     #top-bar .mobile-top-bar ul li a {
         transition: background-color 0.2s ease-in-out;
@@ -442,15 +460,25 @@ hr {
     }
  
     #top-bar .mobile-top-bar ul > li > ul {
+        position: absolute;
+        width: 100%;
+        left: 0;
         display: grid;
         grid-auto-flow: row;
         overflow: hidden;
         border-radius: var(--common-box-radius-mn);
-        box-shadow: var(--common-box-shadow-2);
+        box-shadow: var(--common-box-shadow-4);
         border: none;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #top-bar .mobile-top-bar ul > li > ul > :last-child:nth-child(odd) {
+        grid-column: 1 / -1;
     }
  
     #top-bar .mobile-top-bar ul > li > ul > li a {
+        text-align: center;
+        width: 100%;
         backdrop-filter: var(--sodium-bg-filter);
         color: var(--sodium-text-color);
         background-color: var(--sodium-sec-bg-color);
