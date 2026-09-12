@@ -1,5 +1,7 @@
 # Sodium
 
+![LOGO](/image/sodium.svg)
+
 SCP-CN维基主题版式
 基于Sigma-9
 
