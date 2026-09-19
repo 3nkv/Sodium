@@ -467,7 +467,7 @@ hr {
         grid-auto-flow: row;
         overflow: hidden;
         border-radius: var(--common-box-radius-mn);
-        box-shadow: var(--common-box-shadow-3);
+        box-shadow: var(--common-box-shadow-4);
         border: none;
         grid-template-columns: repeat(2, 1fr);
     }
