@@ -467,7 +467,7 @@ hr {
         grid-auto-flow: row;
         overflow: hidden;
         border-radius: var(--common-box-radius-mn);
-        box-shadow: var(--common-box-shadow-2);
+        box-shadow: var(--common-box-shadow-3);
         border: none;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -477,6 +477,7 @@ hr {
     }
  
     #top-bar .mobile-top-bar ul > li > ul > li a {
+        border: 1px solid var(--sodium-border-color);
         text-align: center;
         font-size: 13px;
         width: 100%;
