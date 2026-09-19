@@ -477,7 +477,8 @@ hr {
     }
  
     #top-bar .mobile-top-bar ul > li > ul > li a {
-        border: 1px solid var(--sodium-border-color);
+        border: 0.5px solid var(--sodium-border-color);
+        box-sizing: border-box;
         text-align: center;
         font-size: 13px;
         width: 100%;
