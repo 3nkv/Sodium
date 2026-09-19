@@ -642,6 +642,10 @@ hr {
 h1 {
     color: var(--sodium-link-color);
 }
+
+h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
  
 #page-content h1::before,
 #page-content h2::before,
