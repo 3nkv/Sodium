@@ -726,6 +726,7 @@ h2, h3, h4, h5, h6 {
 }
  
 #page-content .rate-box-with-credit-button {
+    border-radius: var(--common-box-radius-mn);
     display: flex;
     overflow: hidden;
     height: 25px;
